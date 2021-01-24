@@ -1,0 +1,60 @@
+[
+    {
+        "nama_restoran": "KFC",
+        "layanan": [
+            "Home Delivery",
+            "Drive Thru",
+            "Catering",
+            "KFC Coffe",
+            "Breafast"
+        ],
+        "menu": [
+            "Favorit",
+            "Praktis",
+            "Kombo",
+            "Goceng+",
+            "KFC Coffe"
+        ],
+        "kids": [
+            "Kids Party",
+            "Birhday Funtastic",
+            "Others Party"
+        ],
+        "automotive": [
+            "Formula 2",
+            "Sean Galael",
+            "News"
+        ],
+        "customer": {
+            "customer1": "Faisal",
+            "customer2": "Setiyawati"
+        }
+    },
+    {
+        "nama_restoran": "KFC",
+        "layanan": [
+            "Home Delivery",
+            "Drive Thru",
+            "Catering",
+            "KFC Coffe",
+            "Breafast"
+        ],
+        "menu": [
+            "Favorit",
+            "Praktis",
+            "Kombo",
+            "Goceng+",
+            "KFC Coffe"
+        ],
+        "kids": [
+            "Kids Party",
+            "Birhday Funtastic",
+            "Others Party"
+        ],
+        "automotive": [
+            "Formula 2",
+            "Sean Galael",
+            "News"
+        ]
+    }
+]

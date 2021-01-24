@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>test number format</title>
+	</head>
+	<body>
+		<input type="text" class="uang1" id="uang12">
+		<input type="text" class="uang1" id="uang21" onkeyup="hasil()">
+		<input type="text" class="uang1" id="hasil">
+
+		<script src="jquery-1.8.2.min.js" type="text/javascript" ></script>
+		<script src="jquery.price_format.2.0.js" type="text/javascript" ></script>
+
+		<script type="text/javascript">
+			$('.uang1').priceFormat({
+			    prefix: 'Rp ',
+          		centsLimit: '0',
+			    centsSeparator: ',',
+			    thousandsSeparator: ''
+			});
+			
+			$(function() {
+				$("#uang21").on("keyup",function () {
+					//String []parts = uang12.split(" ");
+					//String bagian1 = parts[1];
+					var temp1 = new Array();
+					var temp2 = new Array();
+					var val1 = $("#uang12").val();
+					var val2 = $("#uang21").val();
+					temp1 = val1.split(" ");
+					temp2 = val2.split(" ");
+
+					//var test = temp[1];
+					var hasil = parseInt(temp1[1]) + parseInt(temp2[1]);
+					
+					$("#hasil").val(hasil);
+				});
+			});
+
+		</script>
+	</body>
+</html>

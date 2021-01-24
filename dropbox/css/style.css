@@ -1,0 +1,142 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: AtlasGrotesk,sans-serif;
+}
+
+#sideleft {
+	float: left;
+	width: 240px;
+	min-width: 240px;
+	background-color: #F7F9FA;
+	height: 631px;
+	overflow: hidden;
+	position: fixed;
+}
+
+#menu {
+	overflow-y: auto;
+	position: absolute;
+	top: 96px;
+	bottom: 0;
+	width: 200px;
+}
+
+#menu ul {
+	list-style: none;
+}
+
+#menu ul li {
+	margin: 20px 0px;
+}
+
+#menu ul li a {
+	text-decoration: none;
+	color: #3d464d;
+	font-weight: normal;
+}
+
+#menu ul li a:hover {
+	color: blue;
+}
+
+#header {
+	position: fixed;
+	overflow: hidden;
+	justify-content: space-between;
+	white-space: nowrap;
+	left: 240px;
+	width: calc(100% - (200px + 1 * 40px));
+	min-width: 744px;
+	background: white;
+}
+
+#hleft {
+	float: left;
+	width: 300px;
+}
+
+.title h2 {
+	padding: 0px;
+	margin: 0px;
+	margin: 30px 30px 30px 20px;
+}
+
+#hright {
+	float: ;
+	width: 766px;
+	overflow: hidden;
+}
+
+.form {
+	float: right;
+}
+
+.form form {
+	margin: 30px 100px 20px 20px;
+}
+
+.form form input[type='text'] {
+	padding: 5px 5px 5px 10px;
+	border : 1px solid #C1C7CD;
+	border-radius: 50px;
+	z-index: 2;
+}
+
+.admin {
+	text-align: right;
+	margin: 30px 20px 20px 20px;
+	color: #3d464d;
+}
+
+#content {
+	width: calc(100% - (200px + 1 * 40px));
+	margin-left: 240px;
+	overflow: hidden;
+}
+
+#content-top {
+	margin: 90px 0px;
+	overflow: hidden;
+}
+
+#cleft {
+	width: 840px;
+	background: white;
+	float: left;
+	padding: 20px 20px 20px 20px;
+}
+
+#cright {
+	width: 240px;
+	float: left;
+	background: white;
+	position: fixed;
+	margin-left: 900px;
+	height: 631px;
+	z-index: 99;
+	margin-top: 40px;
+}
+
+th, td { white-space: nowrap; }
+div.dataTables_wrapper {
+    width: 820px;
+    margin: 0 auto;
+}
+
+.dropzone {
+	color: #ccc;
+	border-style: dashed;
+	border-color: #ccc;
+	line-height: 200px;
+	text-align: center;
+	height: 200px;
+	border-width: 2px;
+	margin-bottom: 20px;
+}
+
+.dropzone.dragover {
+	color: #222;
+	border-color: #222;
+}
+

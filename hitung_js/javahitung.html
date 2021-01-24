@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input type="text" id="val1">
+<input type="text" id="val2">
+<input type="text" id="result">
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#val2").on("keyup",function() {
+			var val1=parseInt($("#val1").val().replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, ''));
+			var val2=parseInt($("#val2").val().replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, ''));
+			
+			var result=val1+val2;
+
+			$("#result").val(result);
+		});
+	});
+</script>
+</body>
+</html>

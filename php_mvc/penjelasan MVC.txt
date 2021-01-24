@@ -1,0 +1,18 @@
+MVC -> arsitektur pada perancangan perangkat lunak berorientasi objek, MVC ini bisa di gunakan oleh bahasa pemrograman selain PHP selama dia memiliki konsep OBJEK ORIENTED PROGRAMMING.
+
+TUJUAN MVC -> adalah untuk memisahkan antara TAMPILAN, DATA dan PROSES.
+
+KOMPONEN UTAMA DALAM MVC -> MODEL => CONTROLLER => VIEW
+
+CONTROLLER => adalah kompenen utama yang mengendalikan alur prosesnya.
+
+kita bisa asumsikan begini MODEL = DATA
+                           CONTROLLER = PROSES
+                           VIEW = TAMPILAN
+
+KENAPA MVC
+1.Organisasi dan struktur kode
+2.pemisahan logic dan tampilan
+3.perawatan kode
+4.implementasi konsep OOP yang sudah di pelajari
+5.digunakan oleh banyak web aplication framework

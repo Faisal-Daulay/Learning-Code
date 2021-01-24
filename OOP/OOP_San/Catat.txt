@@ -1,0 +1,46 @@
+1. Class 
+	- blueprint atau template untuk membuat INSTANCE dari object
+	- class mendefenisikan object 
+	- class bisa menyimpan DATA dan PRILAKU dari object yang di buat,  yang di sebut PROPERTY dan METHOD
+
+2. Object
+	- INSTANCE yang di defenisika oleh class 
+	- kita bisa membuat banyak object hanya dengan 1 class
+	- object di buat menggunkan keyword NEW
+
+3. Property (variable)
+	- sesuatu yang mempresentasikan data / keadaan dari sebuah object atau variable yang ada di dalam object (MEMBER, VARIABLE)
+	- sama seperti variable di dalam PHP, di tambah dengan VISIBILITY (PUBLUC, PRIVATE, PROTECTED) di depanya.
+
+4. Method (prilaku)
+	- mempresentasikan prilaku dari sebuah object 
+	- method adalah FUNCTION yang ada di dalam object
+	- sama seperti variable di dalam PHP, di tambah dengan VISIBILITY (PUBLUC, PRIVATE, PROTECTED) di depanya. 
+
+	CONTOH KASUS PROPERTY DAN METHOD MEMBUAT MOBIL
+	PROPERTY (apa saja yang menempel pada mobil)
+	- nama
+	- merk
+	- warna
+	- kecepatan maksimal
+	- jumlah penumpang
+
+	METHOD (apa yang bisa di lakukan oleh mobil)
+	- tambah kecepatan
+	- kurangi kecepatan
+	- ganti transmisi
+	- belok kiri
+	- belok kanan
+
+5. __construct Method
+	- method yang automatis di panggil ketika sebuah kelas itu di buat objectnya
+	- __construct juga memiliki parameter dan parameter yang di buat, terpisah dengan property yang ada di luar methodnya
+
+6. Object Type
+	- object adalah type data pada object 
+
+7. Inheritance (pewarisan)
+	- merupakan konsep yang ada di dalam OOP
+	- menciptakan hirarky antar kelas (PARENT & CHILD)
+	- CHILD CLASS, mewarisi semua property dan method dari PARENT-nya (yang visible)
+	- CHILD CLASS, memperluas (EXTENDS) fungsionalitas dari PARENT-nya

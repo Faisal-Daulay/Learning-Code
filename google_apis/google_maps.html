@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>GOOGLE MAP</title>
+		
+    	<script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyC73IjOMm0-81g4WwmUb-Sl5775sskuyJI &callback=myMap"
+    async defer></script>
+
+	</head>
+	<body>
+		<h2 align="center">Belajar Google Map</h2>
+		<div id="petaku" style="width: 960px; height: 400px; margin: 0 auto;"></div>
+
+		<script>
+			function myMap() {
+
+				var dhuo = {
+					info: '<strong>DHUO CREATIVE</strong><br>\
+								5224 N Broadway St<br> Chicago, IL 60640<br>\
+								<a href="https://goo.gl/maps/jKNEDz4SyyH2">Get Directions</a>',
+					lat: 3.556016,
+					long: 98.633322
+				};
+
+				var jasa = {
+					info: '<strong>JASA PERMATA</strong><br>\
+								5224 N Broadway St<br> Chicago, IL 60640<br>\
+								<a href="https://goo.gl/maps/jKNEDz4SyyH2">Get Directions</a>',
+					lat: 3.556338,
+					long: 98.633333
+				};
+
+				var love = {
+					info: '<strong>LOVE PETSHOP</strong><br>\
+								5224 N Broadway St<br> Chicago, IL 60640<br>\
+								<a href="https://goo.gl/maps/jKNEDz4SyyH2">Get Directions</a>',
+					lat: 3.557751,
+					long: 98.634899
+				};
+
+				var ok = {
+					info: '<strong>LOVE PETSHOP</strong><br>\
+								5224 N Broadway St<br> Chicago, IL 60640<br>\
+								<a href="https://goo.gl/maps/jKNEDz4SyyH2">Get Directions</a>',
+					lat: 3.556680,
+					long: 98.633880
+				};
+
+				var array_location = [
+					[dhuo.info, dhuo.lat, dhuo.long, 0],
+					[jasa.info, jasa.lat, jasa.long, 1],
+					[love.info, love.lat, love.long, 2],
+					[ok.info, ok.lat, ok.long, 3],
+				];
+
+				var map = new google.maps.Map(document.getElementById('petaku'), {
+					center: new google.maps.LatLng(3.556016, 98.633322), 
+					zoom : 17, 
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				});
+
+				var infowindow = new google.maps.InfoWindow({});
+
+				var marker, i;
+
+				for (i = 0; i < array_location.length; i++) {
+					marker = new google.maps.Marker({
+						position: new google.maps.LatLng(array_location[i][1], array_location[i][2]),
+						// animation : google.maps.Animation.BOUNCE,
+						map: map
+					});
+
+					google.maps.event.addListener(marker, 'click', (function (marker, i) {
+						return function () {
+							infowindow.setContent(array_location[i][0]);
+							infowindow.open(map, marker);
+						}
+					})(marker, i));
+				}
+			}
+		</script>
+	</body>
+</html>
